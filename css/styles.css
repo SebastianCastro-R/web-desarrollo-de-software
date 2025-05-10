@@ -382,12 +382,12 @@ header{
 
 .info-img {
   position: absolute;
-  right: -55px;
+  right: 10px;
   top: -103px;
 }
 
 .info-img img{
-  width: 680px;
+  width: 550px;
 }
 
 .footer {
