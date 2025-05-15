@@ -8,16 +8,11 @@
   text-decoration: none;
 }
 
-.damion-regular {
-  font-family: "Damion", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 body{
   font-family: 'Barlow', sans-serif;
   background-color: #101116;
 }
+
 header{
   background-image: url(../images/ManosConLibros.jpg);
   background-position: center center;
@@ -63,7 +58,7 @@ header{
 }
 
 .menu .navbar ul li a:hover {
-  color: #E70B25;
+  color: #7F5539;
 }
 
 #menu{
@@ -100,26 +95,97 @@ header{
 
 .header-txt p {
   font-size: 18px;
-  color: #A0A0A0;
+  color: #e3dede;
 }
 
 .header-img {
   width: 60%;
 }
 
-.libros {
-  width: 100%;
+/*--------------------*/
+/* COUNTER */
+/*--------------------*/
+
+#mu-counter {
+	background-color: #fff;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: inline;
+	float: left;
+	position: relative;
+	width: 100%;
 }
 
-.botones {
+.mu-counter-area {
+	display: inline;
+	float: left;
+	padding: 70px 0 50px;
+	width: 100%;
+}
+
+.mu-counter-area h2 {
+	color: #fff;
+	text-align: center;
+}
+
+.mu-counter-block .row {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mu-single-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.mu-single-counter i {
+	font-size: 40px;
+	padding: 15px 40px;
+	margin-bottom: 0px; 
+  justify-content: center;
+  align-items: center center;
+	display: inline-block;
+	padding-bottom: 0;
+	margin-top: -60px;
+	background: #fff;
+  color: #9C6644;
+}
+
+
+.counter-value {
+	font-size: 35px;
+	font-weight: 700;
+  text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mu-counter-name {
+  text-align: center;
+
+	color: #333;
+}
+
+/*--------------------*/
+
+.libros {
+  width: 100%;
 }
 
 .btn-1 {
   display: inline-block;
   background: linear-gradient(90deg, #DDB892 0%, #7F5539 100%);
-  padding: 10px 35px;
+  padding: 10px 25px;
   margin-right: 20px;
   color: #FDFDFD;
   border-radius: 25px;
@@ -134,12 +200,26 @@ header{
   border-radius: 25px;
 }
 
+.btn-3 {
+  display: inline-block;
+  background: linear-gradient(90deg, #DDB892 0%, #7F5539 100%);
+  padding: 15px 50px;
+  margin-right: 20px;
+  margin-top: 30px;
+  color: #FDFDFD;
+  border-radius: 25px;
+}
+
 .btn-1:hover {
   background: linear-gradient(90deg, #efe0d1 0%, #d5a88a 100%);
 }
 
 .btn-2:hover {
   border: 1px solid #7F5539;
+}
+
+.btn-3:hover {
+  background: linear-gradient(90deg, #efe0d1 0%, #d5a88a 100%);
 }
 
 .icon {
@@ -390,50 +470,6 @@ header{
   width: 550px;
 }
 
-.footer {
-  padding: 150px 0 100px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo-2 {
-  width: 150px;
-}
-
-.links h4 {
-  color: #FDFDFD;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-  
-}
-
-.links ul li a {
-  color: #FDFDFD;
-  font-size: 16px;
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
-.socials {
-  display: flex;
-}
-
-.social {
-  margin: 0 10px;
-  height: 40px;
-  width: 40px;
-  border: 1px solid #DD241B;
-  border-radius: 50%;
-}
-
-.social:hover {
-  background-color: #DD241B;
-}
-
-.social img {
-  margin: 8px 0 0 10px;
-}
-
 @media(max-width: 991px) {
 
   .menu {
@@ -580,27 +616,177 @@ header{
     margin: 8px 0 0 0;
   }
 
-  .footer {
-    padding: 30px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .links h4 {
-    margin: 35px 0 10px 0;
+    color: #FDFDFD;
+    text-transform: uppercase;
+    margin-bottom: 25px;
   }
-
-
-
 }
+
+/* NUEVOS LIBROS */
+
+.nuevos-libros {
+  width: 100%;
+  margin: auto;
+  padding: 60px 0;
+  background-color: #B08968;
+}
+
+.nuevos-libros h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #FDFDFD;
+  margin-bottom: 20px;
+}
+
+.nuevos-libros p {
+  text-align: center;
+  font-size: 18px;
+  color: #FDFDFD;
+}
+
+/*---------------------*/
+/* Categories */
+/*---------------------*/
+
+.categories {
+  width: 100%;
+  margin: auto;
+  padding: 60px 0;
+  background-color: #FDFDFD;
+}
+
+.cat-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cat-header h2 {
+  font-size: 38px;
+  padding-bottom: 14px;
+  color: #333;
+}
+
+.cat-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.cat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  gap: 30px;
+  max-width: 1200px;       /* Controla el ancho máximo */
+  margin: 0 auto;          /* Centra el grid dentro del section */
+}
+
+.books {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.books:hover {
+  transform: translateY(-5px);
+}
+
+.book-img img {
+  width: 100px;
+  height: 100px;
+  background-color: #B08968;
+  padding: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.books h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.books p {
+  font-size: 16px;
+  color: #666;
+}
+
+/*--------------------*/
+/* FOOTER */
+/*--------------------*/
+.footer {
+  background-color: #9C6644;
+  width: 100%;
+  padding: 80px 0 50px 0;
+  color: #FDFDFD;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap; /* Para que en móviles se acomode en columna */
+  justify-content: space-between; /* Espacio entre logo y secciones */
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.links{
+  min-width: 150px;
+}
+
+.logo-2 {
+  width: 200px;
+  min-width: 170px;
+}
+
+.links h4 {
+  color: #FDFDFD;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  
+}
+
+.links ul li a {
+  color: #FDFDFD;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.socials {  
+  display: flex;
+}
+
+.social {
+  
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #7F5539;
+  border-radius: 50%;
+}
+
+.social:hover {
+  background-color: #7F5539;
+}
+
+.social img {
+  
+  margin: 8px 0 0 10px;
+}
+
+/*---------------------*/
 
 /* FUENTES */
 .barlow-thin {
     font-family: "Barlow", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
+}
   
   .barlow-extralight {
     font-family: "Barlow", sans-serif;
@@ -703,5 +889,10 @@ header{
     font-weight: 900;
     font-style: italic;
   }
-  
+
+  .damion-regular {
+  font-family: "Damion", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
